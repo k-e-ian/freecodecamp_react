@@ -22,21 +22,23 @@ const ReasonsList = ({reasons}) => (
 function Header() {
     return (
         <header>
-                <nav>
-                    <img class="react_img" src="./react.svg"></img>
+                <nav className="nav">
+                    <img className="react_img_logo" src="./react.svg"></img>
+                    <ul className="nav-items">
+                        <li>Pricing</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
                 </nav>
         </header>
     )
 }
 
-
-
-function Page() {
+function MainContent() {
     return (
         <>
-            <Header />
             <div>
-                
+                    
                 <h1>Ian's Awesome React Website</h1>
                 <h2>Reasons React is cool</h2>
                 <ol>
@@ -64,20 +66,26 @@ function Page() {
 
 function Footer() {
     return (
-        <footer>
+        <footer className='footer'>
                 <small>&copy; 2023 Kitembe developement. All rights reserved</small>
         </footer>
     )
 }
 
+function Page() {
+    return (
+        <>
+            <Header />
+            <MainContent/>  
+            <Footer/>    
+        </>
+    )
+}
 
 ReactDOM.render (
     <Page/>,
     document.getElementById("fun_page")
 )
 
-ReactDOM.render (
-    <Footer/>,
-    document.getElementById("footer")
-)
+
 

@@ -1,8 +1,40 @@
 html, body {
-    margin: 5;
-    padding: 5;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
-.react_img {
-    width: 40px;
+.react_img_logo {
+    width: 50px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1px rgb(179, 217, 255);
+
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+}
+
+.nav-items li:hover {
+    box-shadow: 0px 1px rgb(179, 217, 255);
+    cursor: pointer;
+}
+
+.nav-items li {
+    padding: 10px;
+}
+
+.footer {
+    background-color: aquamarine;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
 }
